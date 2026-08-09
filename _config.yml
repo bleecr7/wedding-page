@@ -1,7 +1,8 @@
-title: Wedding Page
-description: Welcome to our wedding website.
-url: ""
-baseurl: ""
+title: Brandon and Elisabeth
+description: London Wedding 2027-07-27
+domain: morolee.life
+url: https://bleecr7.github.io
+baseurl: /wedding-page/
 
 collections:
   sections:
