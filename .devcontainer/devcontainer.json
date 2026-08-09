@@ -18,7 +18,8 @@
         "Shopify.syntax-tree",
         "yzhang.markdown-all-in-one",
         "davidanson.vscode-markdownlint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "github.vscode-github-actions"
       ],
       "settings": {
         "files.autoSave": "onFocusChange",
