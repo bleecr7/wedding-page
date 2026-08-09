@@ -14,7 +14,7 @@ nav: Details
   </h2>
 
   <div class="where-columns">
-    <div class="where-col-media">
+    <div class="where-col-media-top">
       <img src="{{ 'assets/images/goose-wedding.png' | relative_url }}" alt="Wedding goose" />
     </div>
 
@@ -35,8 +35,9 @@ nav: Details
       </div>
     </div>
 
-    <div class="where-col-media">
+    <div class="where-col-media-bottom">
       <img src="{{ 'assets/images/goose-fancy.png' | relative_url }}" alt="Fancy goose" />
     </div>
+
   </div>
 </section>
