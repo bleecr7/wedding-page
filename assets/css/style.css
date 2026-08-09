@@ -303,9 +303,78 @@ main {
   padding-bottom: 1.5rem;
 }
 
-.details .eyebrow.how {
-  margin-top: 4rem;
+.where-heading {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0 0.75em;
+  font-family: var(--font-eyebrow);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.where-heading .and {
+  font-family: var(--font-display);
   text-transform: lowercase;
+  letter-spacing: 0;
+  font-size: 1.4em;
+  color: var(--text);
+}
+
+.where-columns {
+  max-width: 72rem;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.where-col-media img {
+  width: 100%;
+  height: 100%;
+  max-height: 65vh;
+  object-fit: cover;
+}
+
+.where-col-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.detail-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.detail-block:first-child {
+  margin-top: 0;
+}
+
+.detail-block p {
+  margin: 0.25rem 0;
+  font-size: 1.15rem;
+}
+
+.detail-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-eyebrow);
+  font-weight: 400;
+  font-size: 1.9rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
 }
 
 .details-note {
@@ -450,7 +519,8 @@ main {
 /* ------------------------------------------------------------------------ */
 
 @media (max-width: 800px) {
-  .split {
+  .split,
+  .where-columns {
     grid-template-columns: 1fr;
   }
 
