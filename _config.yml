@@ -3,6 +3,10 @@ description: Welcome to our wedding website.
 url: ""
 baseurl: ""
 
+collections:
+  sections:
+    output: false
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

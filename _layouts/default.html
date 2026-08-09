@@ -13,12 +13,12 @@
   <body>
     <nav class="site-nav">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#details">Details</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#guests">Guests</a></li>
-        <li><a href="#travel">Travel</a></li>
-        <li><a href="#rsvp">RSVP</a></li>
+        {% assign nav_sections = site.sections | sort: "order" %}
+        {% for section in nav_sections %}
+          {% if section.anchor %}
+            <li><a href="#{{ section.anchor }}">{{ section.nav }}</a></li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </nav>
     <main>
