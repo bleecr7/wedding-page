@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Brandon and Elisabeth
 ---
 
 {% assign sections = site.sections | sort: "order" %}
