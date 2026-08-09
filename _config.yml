@@ -1,0 +1,10 @@
+title: Wedding Page
+description: Welcome to our wedding website.
+url: ""
+baseurl: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+timezone: Europe/London

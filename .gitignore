@@ -1,0 +1,9 @@
+.DS_Store
+*.local
+
+# Local working notes
+.notes/
+
+# Jekyll
+.jekyll-cache/
+_site/

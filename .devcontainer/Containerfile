@@ -1,0 +1,16 @@
+FROM mcr.microsoft.com/devcontainers/ruby:3.3
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    ca-certificates \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN gem install jekyll bundler
+
+COPY Gemfile Gemfile.lock* /workspace/
+RUN cd /workspace && bundle install
+
+USER vscode
+WORKDIR /workspace

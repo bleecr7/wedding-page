@@ -1,0 +1,40 @@
+{
+  "name": "Wedding Page (Jekyll)",
+  "build": {
+    "context": "..",
+    "dockerfile": "Containerfile"
+  },
+  "forwardPorts": [4000],
+  "portsAttributes": {
+    "4000": {
+      "label": "Jekyll Dev Server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp",
+        "Shopify.syntax-tree",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "files.autoSave": "onFocusChange",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[markdown]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[ruby]": {
+          "editor.defaultFormatter": "Shopify.syntax-tree"
+        },
+        "[erb]": {
+          "editor.defaultFormatter": "Shopify.syntax-tree"
+        }
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
