@@ -30,6 +30,8 @@ pass "feed.xml present"
 
 PORT=4000
 LOG="$(mktemp)"
+BASEURL="$(ruby -ryaml -e 'puts (YAML.load_file(ARGV[0])["baseurl"] || "").to_s' "$ROOT/_config.yml")"
+TARGET="http://localhost:$PORT${BASEURL%/}/"
 bundle exec jekyll serve \
   --source "$ROOT" \
   --destination "$SITE" \
@@ -42,8 +44,8 @@ cleanup() { kill "$SERVER_PID" 2>/dev/null || true; }
 trap cleanup EXIT
 
 for i in $(seq 1 30); do
-  if curl -fsS -o /dev/null "http://localhost:$PORT/"; then
-    pass "homepage serves HTTP 200"
+  if curl -fsS -o /dev/null "$TARGET"; then
+    pass "homepage serves HTTP 200 at $TARGET"
     exit 0
   fi
   sleep 1
@@ -51,4 +53,4 @@ done
 
 echo "server log:" >&2
 cat "$LOG" >&2
-fail "homepage did not serve within 30s"
+fail "homepage did not serve within 30s at $TARGET"

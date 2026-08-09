@@ -22,13 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Build site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -36,7 +36,8 @@ jobs:
       - name: Run build tests
         run: bash .github/scripts/smoke-test.sh
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload Artefact
+        uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
           path: _site
