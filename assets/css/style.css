@@ -394,38 +394,51 @@ main {
   text-align: center;
 }
 
+.timeline-heading {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0 0.75rem;
+  color: var(--text);
+}
+
+.timeline-heading .script {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(4rem, 9vw, 7rem);
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.timeline-heading .eyebrow {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.5vw, 1.75rem);
+}
+
 .timeline-list {
-  max-width: 60rem;
+  max-width: 72rem;
   margin: 3rem auto 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 2rem;
-  align-items: center;
-  text-align: left;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: center;
 }
 
 .timeline-item img {
-  width: 160px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-}
-
-.timeline-item:nth-child(even) img {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.timeline-item:nth-child(even) .timeline-copy {
-  grid-column: 1;
-  grid-row: 1;
 }
 
 .timeline-copy h3 {
@@ -541,22 +554,13 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .timeline-item {
+  .timeline-list {
     grid-template-columns: 1fr;
-    text-align: center;
+    gap: 3rem;
   }
 
-  .timeline-item img,
-  .timeline-item:nth-child(even) img {
-    width: 100%;
-    height: auto;
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .timeline-item:nth-child(even) .timeline-copy {
-    grid-column: 1;
-    grid-row: auto;
+  .timeline-item img {
+    aspect-ratio: auto;
   }
 
   .contact-columns {
