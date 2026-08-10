@@ -30,7 +30,7 @@ nav: RSVP
       <p class="rsvp-deadline">Please RSVP by 31st March 2027</p>
 
       <div class="actions">
-        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdXxOuaB5kGuUuuabD0QmjPyCWfR75-CP4I31KbLk5Y1y-aag/viewform?usp=sharing&ouid=115783324469837020030" target="_blank" rel="noopener">Rsvp Here</a>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdXxOuaB5kGuUuuabD0QmjPyCWfR75-CP4I31KbLk5Y1y-aag/viewform?usp=sharing&ouid=115783324469837020030" target="_blank" rel="noopener">RSVP Here</a>
         <a class="btn btn-outline" href="https://www.weddingshop.com/buy/view/264512" target="_blank" rel="noopener">GIFT US A DATE</a>
       </div>
 
@@ -39,5 +39,6 @@ nav: RSVP
     <div class="split-media">
       <img src="{{ 'assets/images/contact.jpg' | relative_url }}" alt="Brandon and Elisabeth" />
     </div>
+
   </div>
 </section>
