@@ -6,7 +6,7 @@ nav: Timeline
 ---
 
 <section class="timeline section" id="timeline">
-  <h2 class="timeline-heading">
+  <h2 class="section-heading">
     <span class="script">Timeline</span>
     <span class="eyebrow">of the day</span>
   </h2>

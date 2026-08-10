@@ -8,7 +8,10 @@ nav: RSVP
 <section class="rsvp section" id="rsvp">
   <div class="split">
     <div class="split-content">
-      <h2 class="display-title">Contact Details</h2>
+      <h2 class="section-heading">
+        <span class="script">Contact</span>
+        <span class="eyebrow">details</span>
+      </h2>
 
       <div class="contact-columns">
         <div class="contact-col">

@@ -20,7 +20,7 @@ for anchor in home details timeline travel rsvp; do
 done
 pass "all section anchors present: home details timeline travel rsvp"
 
-for marker in "Elisabeth" "27th July 2027" "Contact Details"; do
+for marker in "Elisabeth" "27th July 2027" "We are best contacted via WhatsApp."; do
   grep -q -- "$marker" "$INDEX" || fail "missing content marker: $marker"
 done
 pass "content markers present"
