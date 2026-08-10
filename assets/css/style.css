@@ -547,6 +547,14 @@ main {
 /* ------------------------------------------------------------------------ */
 
 @media (max-width: 800px) {
+  .names {
+    font-size: clamp(2.5rem, 4.5vw, 3rem);
+  }
+
+  .names .and {
+    font-size: clamp(5rem, 5.5vw, 2.6rem);
+  }
+
   .split,
   .where-columns {
     grid-template-columns: 1fr;
