@@ -6,8 +6,10 @@ nav: Timeline
 ---
 
 <section class="timeline section" id="timeline">
-  <h2 class="display-title">the day</h2>
-  <p class="eyebrow">Timeline</p>
+  <h2 class="timeline-heading">
+    <span class="script">Timeline</span>
+    <span class="eyebrow">of the day</span>
+  </h2>
 
   <ul class="timeline-list">
     <li class="timeline-item">
