@@ -180,6 +180,14 @@ main {
   align-items: flex-start;
 }
 
+.travel .split {
+  grid-template-columns: 1fr 2fr;
+}
+
+.travel .section-heading {
+  align-self: center;
+}
+
 /* ------------------------------------------------------------------------ */
 /* Hero */
 /* ------------------------------------------------------------------------ */
@@ -394,8 +402,8 @@ main {
   text-align: center;
 }
 
-.timeline-heading {
-  margin: 0;
+.section-heading {
+  margin: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -404,22 +412,23 @@ main {
   color: var(--text);
 }
 
-.timeline-heading .script {
+.section-heading .script {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(4rem, 9vw, 7rem);
   line-height: 1;
   text-transform: lowercase;
+  margin: 0 1%;
 }
 
-.timeline-heading .eyebrow {
+.section-heading .eyebrow {
   margin: 0;
-  font-size: clamp(1.1rem, 2.5vw, 1.75rem);
+  font-size: clamp(2rem, 2.5vw, 1.75rem);
 }
 
 .timeline-list {
   max-width: 72rem;
-  margin: 3rem auto 0;
+  margin: 3rem auto 3rem;
   padding: 0;
   list-style: none;
   display: grid;
@@ -542,12 +551,21 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .travel .split,
+  .rsvp .split {
+    grid-template-columns: 1fr;
+  }
+
   .section {
     padding: 3rem 1.25rem;
   }
 
   .split-media img {
     max-height: none;
+  }
+
+  .split .split-media {
+    order: -1;
   }
 
   .cards {
@@ -564,10 +582,6 @@ main {
   }
 
   .contact-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .rsvp .split {
     grid-template-columns: 1fr;
   }
 }

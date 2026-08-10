@@ -6,14 +6,16 @@ nav: Travel
 ---
 
 <section class="travel section" id="travel">
+  <h2 class="section-heading">
+    <span class="script">Travel</span>
+    <span class="eyebrow">detail</span>
+  </h2>
+
   <div class="split">
     <div class="split-media">
-      <img src="{{ 'assets/images/favicon-white.png' | relative_url }}" alt="Travel" />
+      <img src="{{ 'assets/images/goose-plane.png' | relative_url }}" alt="Travel" />
     </div>
     <div class="split-content">
-      <p class="eyebrow">Details</p>
-      <h2 class="display-title">Travel</h2>
-
       <div class="cards stacked">
         <div class="card">
           <h3>Airfare</h3>
