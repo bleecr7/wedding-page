@@ -107,7 +107,7 @@ main {
 .section {
   min-height: calc(100svh - 3.5rem);
   min-height: calc(100vh - 3.5rem);
-  padding: 5rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   background-color: var(--bg-section);
   display: flex;
   flex-direction: column;
@@ -366,6 +366,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 5% 0;
 }
 
 .detail-block {
@@ -546,22 +547,44 @@ main {
 /* ------------------------------------------------------------------------ */
 
 @media (max-width: 800px) {
+  .names {
+    font-size: clamp(2.5rem, 4.5vw, 3rem);
+  }
+
+  .names .and {
+    font-size: clamp(5rem, 5.5vw, 2.6rem);
+  }
+
   .split,
   .where-columns {
     grid-template-columns: 1fr;
   }
 
+  .where-columns {
+    gap: 0;
+  }
+
   .travel .split,
   .rsvp .split {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .section {
-    padding: 3rem 1.25rem;
+    padding: 1.25rem 1.25rem;
   }
 
   .split-media img {
     max-height: none;
+  }
+
+  .where-col-media-top img,
+  .where-col-media-bottom img,
+  .timeline-item img,
+  .travel .split-media img {
+    width: 50vw;
+    max-width: 100%;
+    margin-inline: auto;
   }
 
   .travel .split-media {
@@ -583,5 +606,17 @@ main {
 
   .contact-columns {
     grid-template-columns: 1fr;
+  }
+
+  .rsvp-deadline {
+    margin: 1rem 0 1rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.1em;
+  }
+
+  .gifts-note {
+    margin: 1rem 0 1rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.1em;
   }
 }
