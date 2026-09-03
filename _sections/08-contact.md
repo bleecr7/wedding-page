@@ -22,6 +22,7 @@ nav: RSVP
         </div>
         <div class="contact-col">
           <h3>Sophie Moro</h3>
+          <p>For on-the-day queries</p>
           <p>+44 7534 053481</p>
           <p>sophiemoro30@gmail.com</p>
         </div>
@@ -30,11 +31,9 @@ nav: RSVP
       <p class="rsvp-deadline">Please RSVP by 31st March 2027</p>
 
       <div class="actions">
-        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdXxOuaB5kGuUuuabD0QmjPyCWfR75-CP4I31KbLk5Y1y-aag/viewform?usp=sharing&ouid=115783324469837020030" target="_blank" rel="noopener">RSVP Here</a>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdXxOuaB5kGuUuuabD0QmjPyCWfR75-CP4I31KbLk5Y1y-aag/viewform?usp=sharing&ouid=115783324469837020030" target="_blank" rel="noopener">RSVP HERE</a>
         <a class="btn btn-outline" href="https://www.weddingshop.com/buy/view/264512" target="_blank" rel="noopener">GIFT US A DATE</a>
       </div>
-
-      <p class="gifts-note">Gifts are welcome but not expected</p>
     </div>
     <div class="split-media">
       <img src="{{ 'assets/images/contact.jpg' | relative_url }}" alt="Brandon and Elisabeth" />
