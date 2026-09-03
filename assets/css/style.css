@@ -184,10 +184,6 @@ main {
   grid-template-columns: 1fr 2fr;
 }
 
-.travel .section-heading {
-  align-self: center;
-}
-
 /* ------------------------------------------------------------------------ */
 /* Hero */
 /* ------------------------------------------------------------------------ */
@@ -571,6 +567,23 @@ main {
     gap: 0;
   }
 
+  .travel.section {
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+
+  .travel .card p {
+    font-size: 0.95rem;
+  }
+
+  .travel .cards.stacked {
+    gap: 0.9rem;
+  }
+
+  .travel .cards.stacked .card {
+    padding-bottom: 0.7rem;
+  }
+
   .section {
     padding: 1.25rem 1.25rem;
   }
@@ -586,6 +599,10 @@ main {
     width: 50vw;
     max-width: 100%;
     margin-inline: auto;
+  }
+
+  .travel .split-media img {
+    width: 34vw;
   }
 
   .travel .split-media {
