@@ -8,7 +8,7 @@ nav: Travel
 <section class="travel section" id="travel">
   <h2 class="section-heading">
     <span class="script">Travel</span>
-    <span class="eyebrow">detail</span>
+    <span class="eyebrow">ADVICE</span>
   </h2>
 
   <div class="split">
