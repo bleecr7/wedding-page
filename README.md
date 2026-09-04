@@ -1,5 +1,7 @@
 # wedding-page
 
+![Deploy site to Pages](https://github.com/bleecr7/wedding-page/actions/workflows/pages.yml/badge.svg)
+
 Repo for wedding info — a [Jekyll](https://jekyllrb.com) site published via [GitHub Pages](https://pages.github.com).
 
 ## Local development
