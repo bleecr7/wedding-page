@@ -15,7 +15,10 @@ nav: RSVP
 
       <div class="contact-columns">
         <div class="contact-col">
-          <h3>Brandon Lee &amp; Elisabeth Moro</h3>
+          <h3>
+          Brandon Lee &amp; <br>
+          Elisabeth Moro
+          </h3>
           <p>+44 7393 905153</p>
           <p>+39 351 7673705</p>
           <p>We are best contacted via WhatsApp.</p>

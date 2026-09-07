@@ -445,6 +445,7 @@ main {
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 5;
+  max-height: 55vh;
   object-fit: cover;
 }
 
@@ -630,6 +631,7 @@ main {
     max-width: 100%;
     height: auto;
     aspect-ratio: auto;
+    max-height: 40vh;
   }
 
   .contact-columns {
