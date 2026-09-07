@@ -547,6 +547,14 @@ main {
   text-transform: uppercase;
 }
 
+/* Desktop: restore full-viewport sections */
+@media (min-width: 800px) {
+  .section {
+    min-height: calc(100svh - 3.5rem);
+    min-height: calc(100vh - 3.5rem);
+  }
+}
+
 /* ------------------------------------------------------------------------ */
 /* Responsive */
 /* ------------------------------------------------------------------------ */
