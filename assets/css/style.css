@@ -442,11 +442,13 @@ main {
 }
 
 .timeline-item img {
+  display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  max-height: 55vh;
-  object-fit: cover;
+  height: clamp(12rem, 20vw, 18rem);
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+  border-radius: 0.5rem;
 }
 
 .timeline-copy h3 {
@@ -641,11 +643,10 @@ main {
   }
 
   .timeline-item img {
-    width: 50vw;
+    width: min(50vw, 18rem);
     max-width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    max-height: 40vh;
+    height: clamp(10rem, 35vw, 15rem);
+    object-fit: contain;
   }
 
   .contact-columns {
